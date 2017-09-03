@@ -1,4 +1,4 @@
-package com.robotnec.reactivetodo.di.module;
+package com.robotnec.reactivetodo.core.di.module;
 
 import android.content.Context;
 import android.content.SharedPreferences;

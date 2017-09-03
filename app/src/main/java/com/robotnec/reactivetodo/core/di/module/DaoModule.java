@@ -1,6 +1,6 @@
-package com.robotnec.reactivetodo.di.module;
+package com.robotnec.reactivetodo.core.di.module;
 
-import com.robotnec.reactivetodo.persistance.TodoDao;
+import com.robotnec.reactivetodo.core.persistance.TodoDao;
 
 import javax.inject.Singleton;
 

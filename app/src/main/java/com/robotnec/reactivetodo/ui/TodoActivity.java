@@ -2,12 +2,11 @@ package com.robotnec.reactivetodo.ui;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.widget.Toolbar;
 
 import com.robotnec.reactivetodo.R;
-import com.robotnec.reactivetodo.mvp.presenter.TodoPresenter;
-import com.robotnec.reactivetodo.mvp.view.TodoView;
+import com.robotnec.reactivetodo.core.mvp.presenter.TodoPresenter;
+import com.robotnec.reactivetodo.core.mvp.view.TodoView;
 
 import butterknife.BindView;
 

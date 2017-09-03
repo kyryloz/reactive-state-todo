@@ -1,7 +1,7 @@
-package com.robotnec.reactivetodo.mvp.presenter;
+package com.robotnec.reactivetodo.core.mvp.presenter;
 
-import com.robotnec.reactivetodo.di.ApplicationComponent;
-import com.robotnec.reactivetodo.mvp.view.View;
+import com.robotnec.reactivetodo.core.di.ApplicationComponent;
+import com.robotnec.reactivetodo.core.mvp.view.View;
 
 /**
  * @author zak zak@swingpulse.com>

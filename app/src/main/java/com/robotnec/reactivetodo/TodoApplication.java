@@ -2,8 +2,8 @@ package com.robotnec.reactivetodo;
 
 import android.app.Application;
 
-import com.robotnec.reactivetodo.di.ApplicationComponent;
-import com.robotnec.reactivetodo.di.ApplicationGraph;
+import com.robotnec.reactivetodo.core.di.ApplicationComponent;
+import com.robotnec.reactivetodo.core.di.ApplicationGraph;
 
 public class TodoApplication extends Application {
 

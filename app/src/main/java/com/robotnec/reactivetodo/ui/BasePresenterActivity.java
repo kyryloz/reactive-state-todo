@@ -5,9 +5,9 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.robotnec.reactivetodo.TodoApplication;
-import com.robotnec.reactivetodo.di.ApplicationComponent;
-import com.robotnec.reactivetodo.mvp.presenter.Presenter;
-import com.robotnec.reactivetodo.mvp.view.View;
+import com.robotnec.reactivetodo.core.di.ApplicationComponent;
+import com.robotnec.reactivetodo.core.mvp.presenter.Presenter;
+import com.robotnec.reactivetodo.core.mvp.view.View;
 
 import butterknife.ButterKnife;
 

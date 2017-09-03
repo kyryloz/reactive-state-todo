@@ -1,8 +1,8 @@
-package com.robotnec.reactivetodo.di.module;
+package com.robotnec.reactivetodo.core.di.module;
 
 import android.util.Log;
 
-import com.robotnec.reactivetodo.service.TodoService;
+import com.robotnec.reactivetodo.core.service.TodoService;
 
 import javax.inject.Singleton;
 

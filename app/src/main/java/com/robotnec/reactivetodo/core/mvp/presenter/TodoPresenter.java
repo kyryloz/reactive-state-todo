@@ -1,8 +1,8 @@
-package com.robotnec.reactivetodo.mvp.presenter;
+package com.robotnec.reactivetodo.core.mvp.presenter;
 
-import com.robotnec.reactivetodo.di.ApplicationComponent;
-import com.robotnec.reactivetodo.mvp.view.TodoView;
-import com.robotnec.reactivetodo.service.TodoService;
+import com.robotnec.reactivetodo.core.di.ApplicationComponent;
+import com.robotnec.reactivetodo.core.mvp.view.TodoView;
+import com.robotnec.reactivetodo.core.service.TodoService;
 
 import javax.inject.Inject;
 
