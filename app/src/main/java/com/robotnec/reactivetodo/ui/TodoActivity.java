@@ -1,15 +1,17 @@
-package com.robotnec.reactivetodo;
+package com.robotnec.reactivetodo.ui;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
+import com.robotnec.reactivetodo.R;
+import com.robotnec.reactivetodo.mvp.presenter.TodoPresenter;
+import com.robotnec.reactivetodo.mvp.view.TodoView;
 
-public class TodoActivity extends AppCompatActivity {
+import butterknife.BindView;
+
+public class TodoActivity extends BasePresenterActivity<TodoPresenter, TodoView> {
 
     @BindView(R.id.fab)
     FloatingActionButton fab;
@@ -20,14 +22,20 @@ public class TodoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_todo);
-        ButterKnife.bind(this);
         setSupportActionBar(toolbar);
 
         fab = findViewById(R.id.fab);
         fab.setOnClickListener(view ->
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null)
-                        .show());
+                presenter.onFabClick());
+    }
+
+    @Override
+    protected TodoPresenter createPresenter() {
+        return new TodoPresenter();
+    }
+
+    @Override
+    protected int getLayoutId() {
+        return R.layout.activity_todo;
     }
 }
