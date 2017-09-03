@@ -1,8 +1,7 @@
 package com.robotnec.reactivetodo.core.di.module;
 
-import android.util.Log;
-
 import com.robotnec.reactivetodo.core.service.TodoService;
+import com.robotnec.reactivetodo.core.service.TodoServiceImpl;
 
 import javax.inject.Singleton;
 
@@ -15,11 +14,6 @@ public class ServiceModule {
     @Singleton
     @Provides
     TodoService provideMoneyOperationService() {
-        return new TodoService() {
-            @Override
-            public void addTodo(String note) {
-                Log.d("ServiceModule", "add todo: " + note);
-            }
-        };
+        return new TodoServiceImpl();
     }
 }

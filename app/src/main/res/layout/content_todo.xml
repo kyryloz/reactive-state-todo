@@ -6,16 +6,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.robotnec.reactivetodo.ui.TodoActivity"
+    tools:context="com.robotnec.reactivetodo.ui.activity.TodoActivity"
     tools:showIn="@layout/activity_todo">
 
-    <TextView
+    <Button
+        android:id="@+id/addTodoButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todoEditText"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="58dp"/>
 
+    <EditText
+        android:id="@+id/todoEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="4dp"
+        tools:text="Name"/>
+
+    <Button
+        android:id="@+id/removeTodoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/remove"
+        app:layout_constraintStart_toEndOf="@+id/addTodoButton"
+        app:layout_constraintTop_toBottomOf="@+id/todoEditText"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="70dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/todosRecycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addTodoButton"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="134dp"/>
 </android.support.constraint.ConstraintLayout>

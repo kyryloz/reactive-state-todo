@@ -1,4 +1,4 @@
-package com.robotnec.reactivetodo.ui;
+package com.robotnec.reactivetodo.ui.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -24,7 +24,6 @@ public abstract class BasePresenterActivity<P extends Presenter<V>, V extends Vi
         presenter = createPresenter();
         ApplicationComponent component = ((TodoApplication) getApplication()).getApplicationComponent();
         presenter.injectComponent(component);
-        presenter.onViewCreate();
     }
 
     protected abstract P createPresenter();
