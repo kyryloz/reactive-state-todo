@@ -1,5 +1,6 @@
 package com.robotnec.reactivetodo.core.model;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -40,5 +41,9 @@ public class TodoModel {
 
     public static TodoModel inProgress(List<Todo> todos) {
         return new TodoModel(todos, true, null);
+    }
+
+    public static TodoModel initial() {
+        return new TodoModel(new ArrayList<>(), false, null);
     }
 }
